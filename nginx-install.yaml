@@ -3,6 +3,6 @@
   become: yes
   tasks: 
     - name: ping
-       ansible.builtin.ping:
+      ansible.builtin.ping:
 
 
