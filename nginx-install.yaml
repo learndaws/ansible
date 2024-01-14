@@ -1,8 +1,13 @@
-- name: ping all hosts
+- name: install nginx and service start
   hosts: all
   become: yes
   tasks: 
-    - name: nginx installation
-      ansible.builtin.ping:
-
-
+    - name: Installation
+      ansible.builtin.yum:
+        name: ansible 
+        state: present 
+    
+    - name: Service Start
+      ansible.builtin.service:
+        name: ansible
+        state: started
