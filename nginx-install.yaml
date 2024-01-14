@@ -5,9 +5,6 @@
     - name: httpd installation
       ansible.builtin.yum:
         name: httpd 
-        state: present 
+        state: absent 
 
-    - name: httpd service start
-      ansible.builtin.service:
-        name: httpd
-        state: started
+
