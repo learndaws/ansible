@@ -4,5 +4,5 @@
   tasks: 
     - name: start nginx on specific hosts
       ansible.builtin.service:
-        name: httpd
+        name: nginx
         state: started
