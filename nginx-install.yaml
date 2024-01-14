@@ -2,7 +2,11 @@
   hosts: ungrouped
   become: yes
   tasks: 
-    - name: start nginx on specific hosts
+    - name: nginx installation
+      ansible.builtin.yum:
+        name: httpd 
+        state: present 
+
       ansible.builtin.service:
-        name: nginx
+        name: httpd
         state: started
