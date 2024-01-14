@@ -2,7 +2,7 @@
   hosts: ungrouped
   become: yes
   tasks: 
-    - name: nginx installation
+    - name: httpd installation
       ansible.builtin.yum:
         name: httpd 
         state: present 
