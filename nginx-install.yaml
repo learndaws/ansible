@@ -7,6 +7,7 @@
         name: httpd 
         state: present 
 
+    - name: httpd service start
       ansible.builtin.service:
         name: httpd
         state: started
