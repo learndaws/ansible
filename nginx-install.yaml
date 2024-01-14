@@ -1,8 +1,8 @@
 - name: ping all hosts
-  hosts: web
+  hosts: all
   become: yes
   tasks: 
-    - name: httpd installation
+    - name: ping
        ansible.builtin.ping:
 
 
