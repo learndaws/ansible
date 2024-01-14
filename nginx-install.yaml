@@ -2,7 +2,7 @@
   hosts: all
   become: yes
   tasks: 
-    - name: nginx
+    - name: nginx installation
       ansible.builtin.ping:
 
 
