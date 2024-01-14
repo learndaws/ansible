@@ -4,10 +4,10 @@
   tasks: 
     - name: Installation
       ansible.builtin.yum:
-        name: mysql 
+        name: postfix 
         state: present 
     
     - name: Service Start
       ansible.builtin.service:
-        name: mysql
+        name: postfix
         state: started
