@@ -5,6 +5,6 @@
     - name: httpd installation
       ansible.builtin.yum:
         name: httpd 
-        state: absent 
+        state: removed 
 
 
