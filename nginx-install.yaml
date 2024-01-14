@@ -1,5 +1,5 @@
 - name: ping all hosts
-  hosts: all
+  hosts: web
   become: yes
   tasks: 
     - name: httpd installation
