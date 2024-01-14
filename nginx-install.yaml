@@ -6,12 +6,3 @@
       ansible.builtin.yum:
         name: nginx 
         state: present 
-
-- name: start nginx on specific hosts
-  hosts: servicestart
-  become: yes
-  tasks:
-    - name: nginx service start
-      ansible.builtin.service:
-        name: httpd
-        state: started
