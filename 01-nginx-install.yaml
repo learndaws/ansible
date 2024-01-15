@@ -1,5 +1,5 @@
 - name: install postfix and service start
-  hosts: 172.31.28.5
+  hosts: localhost
   become: yes
   tasks: 
     - name: Installation
