@@ -10,9 +10,7 @@
       ansible.builtin.debug:
         msg: "Hello {{ USER }}, Good {{ WISH }}"
 
-    - name: Training
-      hosts: all
-     
+
 
 - name: Training
   hosts: all
