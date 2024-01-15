@@ -1,5 +1,5 @@
 - name: PLAY-1
-  hosts: localhost
+  hosts: all
   become: yes 
   tasks: 
   - name: PLAY-1 & TASK-1
@@ -7,7 +7,7 @@
       msg: "Hello, this is PLAY-1 & TASK-1"
 
 - name: PLAY-2
-  hosts: localhost
+  hosts: all
   become: yes 
   tasks: 
   - name: PLAY-2 & TASK-2
