@@ -5,12 +5,12 @@
     USER: "Srinivasa"
     WISH: "Morning"
     GOOD NEWS: "selected for Devops Training"
-    Fees: "15000"
+    Fees: "RS: 15000"
   tasks:
     - name: Wishing
       ansible.builtin.debug:
         msg: "Hello {{USER}}, Good {{WISH}}"
 
-    - name: Wishing
+    - name: Training
       ansible.builtin.debug:
         msg: "Congrats!! you are {{GOOD NEWS}} and the fees is {{FEES}}"
