@@ -1,4 +1,4 @@
-- name: install nginx and service start
+- name: install postfix and service start
   hosts: all
   become: yes
   tasks: 
