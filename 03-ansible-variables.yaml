@@ -2,8 +2,8 @@
   hosts: localhost
   become: yes
   vars: 
-    USER="Srinivasa"
-    WISH="Morning"
+    USER: "Srinivasa"
+    WISH: "Morning"
   tasks:
     - name: Wishing
       ansible.builtin.debug:
