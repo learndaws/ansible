@@ -13,5 +13,7 @@
 
     - name: Training
       hosts: all
-      ansible.builtin.debug:
-        msg: "Congrats!! you are {{NEWS}} and the fees is {{Fees}}"
+      become: yes
+      - name: external
+        ansible.builtin.debug:
+          msg: "Congrats!! you are {{NEWS}} and the fees is {{Fees}}"
