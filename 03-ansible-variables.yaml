@@ -13,4 +13,4 @@
 
     - name: Training
       ansible.builtin.debug:
-        msg: "Congrats!! you are {{NEWS}} and the fees is {{FEES}}"
+        msg: "Congrats!! you are {{NEWS}} and the fees is {{FeeS}}"
