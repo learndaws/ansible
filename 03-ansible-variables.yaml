@@ -4,7 +4,7 @@
   vars: 
     USER: "Srinivasa"
     WISH: "Morning"
-    GOOD-NEWS: "selected for Devops Training"
+    NEWS: "selected for Devops Training"
     Fees: "RS: 15000"
   tasks:
     - name: Wishing
@@ -13,4 +13,4 @@
 
     - name: Training
       ansible.builtin.debug:
-        msg: "Congrats!! you are {{GOOD-NEWS}} and the fees is {{FEES}}"
+        msg: "Congrats!! you are {{NEWS}} and the fees is {{FEES}}"
