@@ -4,8 +4,6 @@
   vars: 
     USER: "Srinivasa"
     WISH: "Morning"
-    NEWS: "selected for Devops Training"
-    Fees: "RS: 15000"
   tasks:
     - name: Wishing
       ansible.builtin.debug:
@@ -13,6 +11,9 @@
 
 - name: Training
   hosts: all
+  vars: 
+    NEWS: "selected for Devops Training"
+    Fees: "RS: 15000"
   tasks:
     - name: external
       ansible.builtin.debug:
