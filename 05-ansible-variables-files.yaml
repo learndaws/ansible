@@ -1,11 +1,11 @@
 - name: PLAY-1 Variables from Files
   hosts: localhost
   become: yes
-  vars: 
-    COMPANY: "HCL"
   vars_files: 
   - variable-file.yaml
   - variable-file-2.yaml
+  vars: 
+    COMPANY: "HCL"
   tasks: 
   - name: PLAY-1 TASK-1 Variables from Files
     ansible.builtin.debug:
