@@ -8,16 +8,4 @@
   tasks:
     - name: Wishing
       ansible.builtin.debug:
-        msg: "Hello {{ USER }}, Good {{ WISH }}"
-
-
-
-- name: Training
-  hosts: all
-  vars: 
-    NEWS: "selected for Devops Training"
-    Fees: "RS: 15000"
-  tasks:
-    - name: external
-      ansible.builtin.debug:
-        msg: "Congrats!! you are {{ NEWS }} and the fees is {{ Fees }}"
+        msg: "Hello {{USER}}, Good {{WISH}}"
