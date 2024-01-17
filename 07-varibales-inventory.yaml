@@ -1,0 +1,7 @@
+- name: Variables from inventory
+  hosts: localhost
+  become: yes
+  taks:
+  - name: PLAY-1 TASK-1
+    ansible.builtin.debug:
+      msg: "I'm taking the variable from {{REFERENCE}}"
