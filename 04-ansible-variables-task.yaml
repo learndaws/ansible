@@ -6,5 +6,7 @@
     WISH: "Morning"    
   tasks:
     - name: Wishing
+      vars: 
+        WISH: "Afternoon"
       ansible.builtin.debug:
         msg: "Hello {{USER}}, Good {{WISH}}"
