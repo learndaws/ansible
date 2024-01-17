@@ -1,7 +1,7 @@
 - name: PLAY-1 Variables from Files
   hosts: localhost
   become: yes
-  vars_file: 
+  vars_files: 
   - variable-file.yaml
   tasks: 
   - name: PLAY-1 TASK-1 Variables from Files
