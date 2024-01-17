@@ -1,0 +1,14 @@
+- name: Test for prompt feature
+  hosts: localhost
+  become: yes
+  vars_prompt: 
+  - name: SURNAME
+    prompt: Please enter the Surname-
+    private: false
+  - name: FIRST-NAME
+    prompt: Please enter your first name-
+    private: true
+  tasks: 
+  - name: Printing the surname and first name validation
+    ansible.builtin.debug:
+      msg: "I'm {{SURNAME}} {{FIRST-NAME}}"
