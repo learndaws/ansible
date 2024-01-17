@@ -2,7 +2,7 @@
   hosts: localhost
   become: yes
   vars_file: 
-    variable-file.yaml
+  - variable-file.yaml
   tasks: 
   - name: PLAY-1 TASK-1 Variables from Files
     ansible.builtin.debug:
