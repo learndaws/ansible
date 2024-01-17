@@ -1,0 +1,9 @@
+- name: PLAY-1 Variables from Files
+  hosts: localhost
+  become: yes
+  vars_file: 
+    variable-file.yaml
+  tasks: 
+  - name: PLAY-1 TASK-1 Variables from Files
+    ansible.builtin.debug:
+      msg: "I'm {{CLIENT}} and taking gym training from {{TRAINER}}"
