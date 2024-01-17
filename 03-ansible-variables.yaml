@@ -9,3 +9,4 @@
     - name: Wishing
       ansible.builtin.debug:
         msg: "Hello {{USER}}, Good {{WISH}}"
+        msg: "Hello {{USER}}, Good {{WISH}}"
