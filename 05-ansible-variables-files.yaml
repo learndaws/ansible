@@ -3,7 +3,8 @@
   become: yes
   vars_files: 
   - variable-file.yaml
+  - variable-file-2.yaml
   tasks: 
   - name: PLAY-1 TASK-1 Variables from Files
     ansible.builtin.debug:
-      msg: "I'm {{CLIENT}} and taking gym training from {{TRAINER}}"
+      msg: "I'm {{CLIENT}} and {{WISH}} {{TRAINER}}"
