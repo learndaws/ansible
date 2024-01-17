@@ -4,10 +4,9 @@
   vars: 
     USER: "Srinivasa"
     WISH: "Morning"
-    WISH_1: "Morning"
+
     
   tasks:
     - name: Wishing
       ansible.builtin.debug:
         msg: "Hello {{USER}}, Good {{WISH}}"
-        msg-1: "Hello {{USER}}, Good {{WISH_1}}"
