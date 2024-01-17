@@ -8,5 +8,7 @@
     COMPANY: "HCL"
   tasks: 
   - name: PLAY-1 TASK-1 Variables from Files
+    vars: 
+      COMPANY: "INFOSYS"
     ansible.builtin.debug:
       msg: "I'm {{CLIENT}} and {{WISH}} {{TRAINER}}. I work at {{COMPANY}}"
