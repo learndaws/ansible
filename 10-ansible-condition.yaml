@@ -2,11 +2,11 @@
   hosts: localhost
   become: yes
   tasks:
+
   - name: check if username existed
     ansible.builtin.command: id roboshop
     register: user
-    ignore_errors:
-    
-  - name: print the output saved in user
-    ansible.builtin.debug:
-      msg: "output is {{user}}"
+  
+
+
+      
