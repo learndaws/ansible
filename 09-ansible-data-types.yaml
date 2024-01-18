@@ -7,7 +7,7 @@
     - Devops
     - AWS
     - Devops with AWS
-    Course-Duration:
+    Course_Duration:
       Devops: 1Month
       AWS: 1Month
       Devops with AWS: 3Months
@@ -23,7 +23,7 @@
 
   - name: Map
     ansible-builtin-debug:
-      msg: "Course Duration is {{Course-Duration}}"
+      msg: "Course Duration is {{Course_Duration}}"
 
   - name: Boolean
     ansible-builtin-debug:
