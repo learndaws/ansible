@@ -6,6 +6,7 @@
   - name: check if username existed
     ansible.builtin.command: id roboshop
     register: user
+    ignore_errors: true
 
   - name: print the output saved in user
     ansible.builtin.debug:
