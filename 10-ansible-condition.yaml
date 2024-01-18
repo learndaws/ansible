@@ -1,4 +1,4 @@
-- name: Validate and Create the username-roboshop
+- name: Validate and Create the username roboshop
   hosts: localhost
   become: yes
   tasks:
