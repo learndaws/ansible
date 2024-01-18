@@ -4,7 +4,7 @@
   tasks:
   - name: check if username existed
     ansible.builtin.command: id roboshop
-      register: user
+    register: user
   - name: print the output saved in user
     ansible.builtin.debug:
       msg: "output is {{user}}"
