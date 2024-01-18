@@ -12,6 +12,10 @@
     ansible.builtin.debug:
       msg: "output is: {{user}}"
 
+  - name: print the rc output
+    ansible.builtin.user:
+      msg: "rc output is: {{user.rc}}"
+
   
   
 
