@@ -1,0 +1,30 @@
+- name: Executing some data types under the same PLAY
+  hosts: localhost
+  become: yes
+  vars: 
+    NAME: Siva Kumar
+    Courses:
+    - Devops
+    - AWS
+    - Devops with AWS
+    Course Duration:
+      Devops: 1Month
+      AWS: 1Month
+      Devops with AWS: 3Months
+    Boolean: True
+  tasks:
+  - name: Key Value
+    ansible-builtin-debug:
+      msg: "Trainer is {{NAME}}"
+  
+  - name: List
+    ansible-builtin-debug:
+      msg: "Courses offering by the trainer is {{Courses}}"
+
+  - name: Map
+    ansible-builtin-debug:
+      msg: "Course Duration is {{Course Duration}}"
+
+  - name: Boolean
+    ansible-builtin-debug:
+      msg: "Is training working in IT {{Boolean}}"
