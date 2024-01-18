@@ -18,13 +18,13 @@
       msg: "Trainer is {{NAME}}"
   
   - name: List
-    ansible-builtin-debug:
+    ansible.builtin.debug:
       msg: "Courses offering by the trainer is {{Courses}}"
 
   - name: Map
-    ansible-builtin-debug:
+    ansible.builtin.debug:
       msg: "Course Duration is {{Course_Duration}}"
 
   - name: Boolean
-    ansible-builtin-debug:
+    ansible.builtin.debug:
       msg: "Is training working in IT {{Boolean}}"
