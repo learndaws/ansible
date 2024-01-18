@@ -27,4 +27,4 @@
 
   - name: Boolean
     ansible.builtin.debug:
-      msg: "Is training working in IT {{Boolean}}"
+      msg: "Is training working in IT: {{Boolean}}"
