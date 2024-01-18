@@ -18,7 +18,7 @@
 
   - name: create roboshop user if rc!=0
     ansible.builtin.user:
-      name: useradd roboshop
+      name: roboshop
     when: user.rc != 0
 
   
