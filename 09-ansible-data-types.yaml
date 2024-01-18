@@ -14,7 +14,7 @@
     Boolean: True
   tasks:
   - name: Key Value
-    ansible-builtin-debug:
+    ansible.builtin.debug:
       msg: "Trainer is {{NAME}}"
   
   - name: List
