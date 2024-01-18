@@ -1,0 +1,10 @@
+- name: Validate and Create the username-roboshop
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: check if username existed
+    ansible.builtin.command: id roboshop
+      register: user
+  - name: print the output saved in user
+    ansible.builtin.dubug:
+      msg: "output is {{user}}"
