@@ -17,5 +17,5 @@
         enabled: yes
       loop:
         - {what: 'sshd'}
-        - {what: 'mysql'}
+        - {what: 'mysql-8.0.26'}
         - {what: 'postfix'}
