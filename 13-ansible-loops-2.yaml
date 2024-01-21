@@ -4,9 +4,9 @@
   tasks:
     - name: package automatic installation
       ansible.builtin.package:
-        name: "{{item.name}}"
-        state: "{{item.state}}"
+        name: "{{item.what}}"
+        state: "{{item.to}}"
       loop:
-        - {name: 'git', state: 'absent'}
-        - {name: 'mysql', state: 'absent'}
-        - {name: 'postfix', state: 'absent'}
+        - {what: 'git', to: 'absent'}
+        - {what: 'mysql', to: 'absent'}
+        - {what: 'postfix', to: 'absent'}
