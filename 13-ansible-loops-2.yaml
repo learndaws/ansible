@@ -6,8 +6,16 @@
       ansible.builtin.package:
         name: "{{item.what}}"
         state: "{{item.to}}"
-        enabled: "{{item.enabled}}"
       loop:
-        - {what: 'git', to: 'present', enabled: 'yes'}
-        - {what: 'mysql', to: 'present', enabled: 'yes'}
-        - {what: 'postfix', to: 'present', enabled: 'yes'}
+        - {what: 'git', to: 'present'}
+        - {what: 'mysql', to: 'present'}
+        - {what: 'postfix', to: 'present'}
+
+    - name: Service Start
+      ansible.builtin.service:
+        name: "{{item.what}}"
+        enabled: yes
+      loop:
+        - {what: 'git'}
+        - {what: 'mysql'}
+        - {what: 'postfix'}
