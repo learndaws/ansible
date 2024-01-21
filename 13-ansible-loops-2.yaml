@@ -6,7 +6,8 @@
       ansible.builtin.package:
         name: "{{item.what}}"
         state: "{{item.to}}"
+        enabled: "{{item.enabled}}"
       loop:
-        - {what: 'git', to: 'present'}
-        - {what: 'mysql', to: 'present'}
-        - {what: 'postfix', to: 'present'}
+        - {what: 'git', to: 'present', enabled: 'yes'}
+        - {what: 'mysql', to: 'present', enabled: 'yes'}
+        - {what: 'postfix', to: 'present', enabled: 'yes'}
