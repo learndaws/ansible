@@ -8,7 +8,6 @@
         state: "{{item.to}}"
       loop:
         - {what: 'git', to: 'present'}
-        - {what: 'mysql', to: 'present'}
         - {what: 'postfix', to: 'present'}
 
     - name: Service Start
@@ -17,5 +16,4 @@
         enabled: yes
       loop:
         - {what: 'sshd'}
-        - {what: 'mysql-8.0.26'}
         - {what: 'postfix'}
