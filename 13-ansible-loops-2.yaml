@@ -7,6 +7,6 @@
         name: "{{item.what}}"
         state: "{{item.to}}"
       loop:
-        - {what: 'git', to: 'absent'}
-        - {what: 'mysql', to: 'absent'}
-        - {what: 'postfix', to: 'absent'}
+        - {what: 'git', to: 'present'}
+        - {what: 'mysql', to: 'present'}
+        - {what: 'postfix', to: 'present'}
