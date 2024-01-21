@@ -1,0 +1,13 @@
+- name: Ansible Loops
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Loops
+      ansible.builtin.debug:
+        msg: "Hello {{item}}"
+      loop:
+        - Amma
+        - Daddy
+        - Annavarapu Srinivasa Chalapathi Rao
+        - Annavarapu Gayathri Devi
+        - Annavarapu Tanvika
