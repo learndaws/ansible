@@ -17,5 +17,5 @@
         enabled: yes
       loop:
         - {what: 'sshd'}
-        - {what: 'mysqld'}
+        - {what: 'mysql'}
         - {what: 'postfix'}
