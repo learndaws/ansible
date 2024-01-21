@@ -1,0 +1,12 @@
+- name: Package Installation
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: package automatic installation
+      ansible.builtin.package:
+        name: "{{item}}"
+        state: absent
+      loop:
+        - git
+        - mysql
+        - postfix
