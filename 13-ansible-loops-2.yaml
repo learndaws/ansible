@@ -16,6 +16,6 @@
         name: "{{item.what}}"
         enabled: yes
       loop:
-        - {what: 'git'}
-        - {what: 'mysql'}
+        - {what: 'sshd'}
+        - {what: 'mysqld'}
         - {what: 'postfix'}
