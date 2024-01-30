@@ -11,7 +11,7 @@
       Devops: 1Month
       AWS: 1Month
       Devops with AWS: 3Months
-    BHello: True
+    Boolean: True
   tasks:
   - name: Key Value
     ansible.builtin.debug:
@@ -27,4 +27,4 @@
 
   - name: Boolean
     ansible.builtin.debug:
-      msg: "Is training working in IT: {{BHello}}"
+      msg: "Is training working in IT: {{Boolean}}"
