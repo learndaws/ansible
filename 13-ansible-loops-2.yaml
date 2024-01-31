@@ -10,10 +10,4 @@
         - {what: 'git', to: 'present'}
         - {what: 'postfix', to: 'present'}
 
-    - name: Service Start
-      ansible.builtin.service:
-        name: "{{item.what}}"
-        enabled: yes
-      loop:
-        - {what: 'sshd'}
-        - {what: 'postfix'}
+
